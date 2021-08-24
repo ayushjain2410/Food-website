@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:59px;
+}
+/* navigation bar */
+#navbar{
+    display:flex;
+    align-items:center;
+    position:sticky;
+    top:0px;
+    z-index:3;
+}
+#navbar::before{
+    content:"";
+    background-color:black;
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:-1;
+    opacity:0.4;
+    top:0px;
+    left:0px;
+
+
+}
+/*navigation bar: logo and image */
+#logo{
+    margin:10px 34px;
+
+}
+
+#logo img{
+    margin:3px 5px;
+    height: 50px;
+    width:50px;
+    border-radius:50px;
+}
+
+/* navigation bar : list styling*/
+ul{
+    display:flex;/* make li items horizontal*/
+}
+#navbar ul li{
+    list-style:none;
+    font-size:1.3rem;
+}
+#navbar ul li a{
+    text-decoration: none;
+    display:block;
+    padding:20px;
+    border-radius:20px;
+    color:white;
+
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color:white;
+}
+/* home section styling*/
+
+#home{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding:3px 200px;
+    text-align:center;
+    height:470px;
+}
+#home::before{
+    content:"";
+    background: url("https://www.moneycrashers.com/wp-content/uploads/2015/05/food-coop-costs-benefits-drawbacks.jpg") no-repeat center center;
+    background-size: 100% 100%;
+    width:100%;
+    height:540px;
+    position:absolute;
+    z-index:-1;
+    opacity:0.6;
+    top:0px;
+    left:0px;
+}
+#home h1{
+    color:white;
+    text-align:center;
+
+}
+#home p{
+    color:white;
+    font-size:1.5rem;
+    text-align:center;
+
+}
+/*service section*/
+#services{
+    margin:24px;
+    display:flex;
+}
+#services .box{
+    border:2px solid brown; 
+    padding:10px;
+    border-radius:25px;
+    margin:12px;
+
+}
+#services .box img{
+    height:160px;
+    margin:auto;
+    display:block;
+}
+
+/*client section*/
+
+#client-section{
+  
+    position:relative;
+}
+#client-section::before{
+    content:"";
+    position:absolute;
+    background: url("https://i.pinimg.com/originals/03/4b/58/034b588b27ec7bc95cb7cb072da3fc60.png");
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.5;
+
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height:140px;
+}
+.client-item{
+    padding:34px;
+    margin:5px;
+}
+/* contact section*/
+#contact-box{
+    display:flex;
+    text-align: center;
+    align-items:center;
+    padding-bottom:34px;
+    justify-content: center;
+}
+#contact{
+   position:relative;
+   margin-top:0;
+   
+}
+#contact h1{
+    margin-top:0px;
+}
+#contact::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.7;
+    background:url("https://ak.picdn.net/shutterstock/videos/21252142/thumb/1.jpg") no-repeat center center/cover;
+
+}
+#contact-box input,#contact-box textarea{
+    width:100%;
+    align-items:center;
+    border-radius:9px;
+    font-size:1.1rem;
+
+}
+#contact-box form{
+    width:40%;
+}
+#content-box label{
+    font-size:1.3rem;
+}
+/* footer section*/
+footer{
+    text-align: center;
+      background:black;
+      color:white;
+      margin-top:0px;
+      margin-bottom:0px;
+
+}
+ 
+ 
+
+/* utility claseses*/
+.h-primary{
+    font-size:3.8rem;
+    padding:12px;
+    margin-top:15px;
+}
+.h-secondry{
+    font-size:2.3rem;
+    padding:12px;
+
+}
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color:cyan;
+    margin:17px;
+    border-radius: 10px;
+    font-size:25px;
+    cursor:pointer;
+}
+.center{
+    text-align :center;
+    margin:10px;
+    padding:10px;
+}
